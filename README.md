@@ -1,8 +1,8 @@
-# {{ PROJECT_NAME }}
+# statuser
 
-{{ PROJECT_DESCRIPTION }}
+📣  A user friendly status outputting library for go
 
-![goreleaser format](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/goreleaser%20format/badge.svg) ![Go Build](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/Go%20Build/badge.svg) ![Format](https://github.com/Matt-Gleich/{{ PROJECT_NAME }}/workflows/Format/badge.svg) ![goreleaser](https://github.com/Matt-Gleich/go_template/workflows/{{ PROJECT_NAME }}/badge.svg)
+![Go Build](https://github.com/Matt-Gleich/statuser/workflows/Go%20Build/badge.svg) ![Format](https://github.com/Matt-Gleich/statuser/workflows/Format/badge.svg)
 
 ## Contributors
 
