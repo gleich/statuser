@@ -2,7 +2,7 @@
 
 📣  A user friendly status outputting library for go
 
-![Go Build](https://github.com/Matt-Gleich/statuser/workflows/Go%20Build/badge.svg) ![Format](https://github.com/Matt-Gleich/statuser/workflows/Format/badge.svg)
+![Format](https://github.com/Matt-Gleich/statuser/workflows/Format/badge.svg)
 
 ## Contributors
 
