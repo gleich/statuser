@@ -30,3 +30,12 @@ func Error(message string, err error) {
 	color.Red("\n" + message)
 	color.Red("\nGOLANG ERROR (SHOW DEVELOPER):\n" + err.Error())
 }
+
+// Warning ... Output a warning to the user
+func Warning(message string) {
+	title := "WARNING"
+	if emojis {
+		title = "⚠️ WARNING ⚠️"
+	}
+	color.Yellow(title + "\n" + message)
+}
