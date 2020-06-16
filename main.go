@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"unicode/utf8"
 
 	"github.com/fatih/color"
@@ -21,7 +22,7 @@ func generateBlock(message, surroundingChar string) string {
 }
 
 // Error ... Output an error to the user
-func Error(message string, err error) {
+func Error(message string, err error, exitCode int) {
 	title := "ERROR"
 	if emojis {
 		title = "🚨 ERROR 🚨"
@@ -29,6 +30,7 @@ func Error(message string, err error) {
 	color.Red(generateBlock(title, "░"))
 	color.Red("\n" + message)
 	color.Red("\nGOLANG ERROR (SHOW DEVELOPER):\n" + err.Error())
+	os.Exit(exitCode)
 }
 
 // Warning ... Output a warning to the user
