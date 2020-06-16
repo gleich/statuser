@@ -39,3 +39,12 @@ func Warning(message string) {
 	}
 	color.Yellow(title + "\n" + message)
 }
+
+// Success ... Output a success to the user
+func Success(message string) {
+	title := "SUCCESS"
+	if emojis {
+		title = "✅ SUCCESS ✅"
+	}
+	color.Green(title + "\n" + message)
+}
