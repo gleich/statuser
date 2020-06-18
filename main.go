@@ -8,7 +8,8 @@ import (
 	"github.com/fatih/color"
 )
 
-var emojis = false
+// Emojis ... If the output should use emojis
+var Emojis = false
 
 var blockChar = "░"
 
@@ -16,7 +17,7 @@ func generateBlock(message, surroundingChar string) string {
 	messageLen := utf8.RuneCountInString(message)
 	var topAndBottom string
 	var extension int
-	if emojis {
+	if Emojis {
 		extension = 4
 	} else {
 		extension = 2
@@ -30,7 +31,7 @@ func generateBlock(message, surroundingChar string) string {
 // Error ... Output an error to the user
 func Error(message string, err error, exitCode int) {
 	title := "ERROR"
-	if emojis {
+	if Emojis {
 		title = "🚨 ERROR 🚨"
 	}
 	color.Red(generateBlock(title, "░"))
@@ -42,7 +43,7 @@ func Error(message string, err error, exitCode int) {
 // Warning ... Output a warning to the user
 func Warning(message string) {
 	title := "WARNING"
-	if emojis {
+	if Emojis {
 		title = "⚠️ WARNING ⚠️"
 	}
 	color.Yellow(title + "\n" + message)
@@ -51,7 +52,7 @@ func Warning(message string) {
 // Success ... Output a success to the user
 func Success(message string) {
 	title := "SUCCESS"
-	if emojis {
+	if Emojis {
 		title = "✅ SUCCESS ✅"
 	}
 	color.Green(title + "\n" + message)
