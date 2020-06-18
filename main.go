@@ -9,7 +9,7 @@ import (
 )
 
 // Emojis ... If the output should use emojis
-var Emojis = false
+var Emojis = true
 
 var blockChar = "░"
 
