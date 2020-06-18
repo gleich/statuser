@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"os"
 	"unicode/utf8"
@@ -14,8 +15,15 @@ var blockChar = "░"
 
 func generateBlock(message, surroundingChar string) string {
 	messageLen := utf8.RuneCountInString(message)
+	fmt.Println(messageLen)
 	var topAndBottom string
-	for i := 0; i < messageLen+4; i++ {
+	var extension int
+	if emojis {
+		extension = 4
+	} else {
+		extension = 2
+	}
+	for i := 0; i < messageLen+extension; i++ {
 		topAndBottom = topAndBottom + surroundingChar
 	}
 	return fmt.Sprintf("%v\n%v%v%v\n%v", topAndBottom, surroundingChar, message, surroundingChar, topAndBottom)
@@ -49,4 +57,8 @@ func Success(message string) {
 		title = "✅ SUCCESS ✅"
 	}
 	color.Green(title + "\n" + message)
+}
+
+func main() {
+	Error("Here is a message!", errors.New("This is an error"), 0)
 }
