@@ -1,7 +1,6 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"os"
 	"unicode/utf8"
@@ -9,13 +8,12 @@ import (
 	"github.com/fatih/color"
 )
 
-var emojis = true
+var emojis = false
 
 var blockChar = "░"
 
 func generateBlock(message, surroundingChar string) string {
 	messageLen := utf8.RuneCountInString(message)
-	fmt.Println(messageLen)
 	var topAndBottom string
 	var extension int
 	if emojis {
@@ -57,8 +55,4 @@ func Success(message string) {
 		title = "✅ SUCCESS ✅"
 	}
 	color.Green(title + "\n" + message)
-}
-
-func main() {
-	Error("Here is a message!", errors.New("This is an error"), 0)
 }
