@@ -11,8 +11,6 @@ import (
 // Emojis ... If the output should use emojis
 var Emojis = true
 
-var blockChar = "░"
-
 func generateBlock(message, surroundingChar string) string {
 	messageLen := utf8.RuneCountInString(message)
 	var topAndBottom string
