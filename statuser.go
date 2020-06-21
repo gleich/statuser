@@ -38,6 +38,17 @@ func Error(message string, err error, exitCode int) {
 	os.Exit(exitCode)
 }
 
+// ErrorMsg ... Output an error to the user
+func ErrorMsg(message string, exitCode int) {
+	title := "ERROR"
+	if Emojis {
+		title = "🚨 ERROR 🚨"
+	}
+	color.Red(generateBlock(title, "░"))
+	color.Red("\n" + message)
+	os.Exit(exitCode)
+}
+
 // Warning ... Output a warning to the user
 func Warning(message string) {
 	title := "WARNING"

@@ -50,6 +50,32 @@ err
 exit status 1
 ```
 
+### `ErrorMsg()`
+
+Output an error to the user with just a message
+
+#### Parameters
+
+1. message
+   * Type: `string`
+   * Description: A human readable message to help the user
+2. exitCode
+   * Type: `int`
+   * Description: Exit code used to exit the program
+
+#### Example
+
+Outputs the following in red text:
+
+```
+░░░░░░░░░░░░░
+░🚨 ERROR 🚨░
+░░░░░░░░░░░░░
+
+message
+exit status 1
+```
+
 ### `Warning()`
 
 Output a warning the the user
