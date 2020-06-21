@@ -1,4 +1,4 @@
-name: test
+name: build
 
 on:
   push:
@@ -7,19 +7,21 @@ on:
     - cron: '0 * * * *' # Runs every hour
 
 jobs:
-  test:
+  build:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Set up Go
+      - name: Set up Go 1.x
         uses: actions/setup-go@v2
         with:
           go-version: ^1.13
-      - name: Get Dependencies
-        run: go get -v -t -d ./...
-      - name: Go Test
-        run: go test ./...
+        id: go
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Get dependencies
+        run: |
+          go get -v -t -d ./...
+      - name: Build
+        run: go build -v .
