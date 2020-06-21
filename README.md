@@ -69,24 +69,6 @@ Outputs the following text in yellow:
 message
 ```
 
-
-### `Success()`
-
-#### Parameters
-
-1. message
-   * Type: `string`
-   * Description: The success message to display to the user
-
-#### Example
-
-Outputs the following text in green:
-
-```
-✅ SUCCESS ✅
-message
-```
-
 ## Contributors
 
 1. Matthew Gleich ([@Matt-Gleich]("http://www.github.com/Matt-Gleich"))
