@@ -17,3 +17,8 @@ func TestGenerateBlock(t *testing.T) {
 		t.Errorf(block, "!= ░░░░░░░\n░ERROR░\n░░░░░░░")
 	}
 }
+
+func TestWarning(t *testing.T) {
+	Emojis = true
+	Warning("Test")
+}
