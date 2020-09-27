@@ -1,8 +1,9 @@
 # statuser
 
-📣 A user friendly status outputting library for go
+📣 A user-friendly status outputting library for go
 
-![lint](https://github.com/Matt-Gleich/statuser/workflows/lint/badge.svg) ![Go Test](https://github.com/Matt-Gleich/statuser/workflows/Go%20Test/badge.svg)
+![test](https://github.com/Matt-Gleich/statuser/workflows/test/badge.svg)
+![lint](https://github.com/Matt-Gleich/statuser/workflows/lint/badge.svg)
 
 ## 🚀 Installing
 
@@ -16,7 +17,7 @@ go get -u github.com/Matt-Gleich/statuser
 
 ### Emojis
 
-By default emojis are turned on. If you wish to disable them then just do `emojis = false` in your go code.
+By default, emojis are turned on. If you wish to disable them then just do `emojis = false` in your go code.
 
 ### `Error()`
 
@@ -78,7 +79,7 @@ exit status 1
 
 ### `Warning()`
 
-Output a warning the the user
+Output a warning the user
 
 #### Parameters
 
@@ -93,6 +94,24 @@ Outputs the following text in yellow:
 ```
 ⚠️ WARNING ⚠️
 message
+```
+
+### `Success()`
+
+Output a warning the user
+
+#### Parameters
+
+1. message
+   - Type: `string`
+   - Description: The success message to display to the user
+
+#### Example
+
+Outputs the following text in green:
+
+```
+✓ message
 ```
 
 ## Contributors
