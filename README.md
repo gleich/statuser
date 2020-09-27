@@ -1,10 +1,12 @@
 <!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich"]:end -->
+
 # statuser
 
 📣 A user-friendly status outputting library for go
 
-![test](https://github.com/Matt-Gleich/statuser/workflows/test/badge.svg)
+![build](https://github.com/Matt-Gleich/statuser/workflows/build/badge.svg)
 ![lint](https://github.com/Matt-Gleich/statuser/workflows/lint/badge.svg)
+![test](https://github.com/Matt-Gleich/statuser/workflows/test/badge.svg)
 
 ## 🚀 Installing
 
@@ -120,8 +122,8 @@ Outputs the following text in green:
 1. Matthew Gleich ([@Matt-Gleich](http://www.github.com/Matt-Gleich))
 
 <!-- DO NOT REMOVE - contributor_list:start -->
-## 👥 Contributors
 
+## 👥 Contributors
 
 - **[@Matt-Gleich](https://github.com/Matt-Gleich)**
 
