@@ -1,6 +1,6 @@
 <!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich"]:end -->
 
-# statuser
+# statuser ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Matt-Gleich/statuser?include_prereleases)
 
 📣 A user-friendly status outputting library for go
 
