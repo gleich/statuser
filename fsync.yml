@@ -3,7 +3,7 @@ replace:
   - before: project_name
     after: statuser
   - before: project_description
-    after: 📣 A user friendly status outputting library for go
+    after: 📣 A user-friendly status outputting library for go
   - before: github_username
     after: Matt-Gleich
   - before: project_author_email
@@ -31,3 +31,7 @@ files:
     source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/workflows/contributors.yml
   - path: .github/workflows/fsync.yml
     source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/workflows/fsync.yml
+  - path: dev.Dockerfile
+    source: https://github.com/Matt-Gleich/go_template/blob/master/dev.Dockerfile
+  - path: dev.lint.Dockerfile
+    source: https://github.com/Matt-Gleich/go_template/blob/master/dev.lint.Dockerfile
