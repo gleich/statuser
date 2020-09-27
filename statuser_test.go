@@ -21,6 +21,8 @@ func TestGenerateBlock(t *testing.T) {
 func TestWarning(t *testing.T) {
 	Emojis = true
 	Warning("Test")
+	Emojis = false
+	Warning("Test")
 }
 
 func TestSuccess(t *testing.T) {

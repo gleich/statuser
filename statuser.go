@@ -26,7 +26,7 @@ func generateBlock(message, surroundingChar string) string {
 	return fmt.Sprintf("%v\n%v%v%v\n%v", topAndBottom, surroundingChar, message, surroundingChar, topAndBottom)
 }
 
-// Error ... Output an error to the user
+// Output an error to the user
 func Error(message string, err error, exitCode int) {
 	title := "ERROR"
 	if Emojis {
@@ -38,7 +38,7 @@ func Error(message string, err error, exitCode int) {
 	os.Exit(exitCode)
 }
 
-// ErrorMsg ... Output an error to the user
+// Output an error to the user
 func ErrorMsg(message string, exitCode int) {
 	title := "ERROR"
 	if Emojis {
@@ -49,7 +49,7 @@ func ErrorMsg(message string, exitCode int) {
 	os.Exit(exitCode)
 }
 
-// Warning ... Output a warning to the user
+// Output a warning to the user
 func Warning(message string) {
 	title := "WARNING"
 	if Emojis {
