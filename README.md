@@ -1,3 +1,4 @@
+<!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich"]:end -->
 # statuser
 
 📣 A user friendly status outputting library for go
@@ -98,3 +99,11 @@ message
 ## Contributors
 
 1. Matthew Gleich ([@Matt-Gleich](http://www.github.com/Matt-Gleich))
+
+<!-- DO NOT REMOVE - contributor_list:start -->
+## 👥 Contributors
+
+
+- **[@Matt-Gleich](https://github.com/Matt-Gleich)**
+
+<!-- DO NOT REMOVE - contributor_list:end -->
