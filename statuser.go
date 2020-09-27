@@ -62,7 +62,7 @@ func Warning(message string) {
 func Success(message string) {
 	prefix := "✓ "
 	if Emojis {
-		prefix = "✅  "
+		prefix = "✅ "
 	}
 	color.Green(prefix + message)
 }

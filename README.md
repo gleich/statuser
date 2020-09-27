@@ -114,7 +114,7 @@ Output a warning the user
 Outputs the following text in green:
 
 ```
-✓ message
+✅ message
 ```
 
 ## Contributors
