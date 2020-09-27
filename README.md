@@ -13,14 +13,14 @@
 Simply run the command below in the root of your go project:
 
 ```bash
-go get -u github.com/Matt-Gleich/statuser
+go get -u github.com/Matt-Gleich/statuser/v2
 ```
 
-## 📚 Documentation
+## 📚 Documentation ![GoDoc](https://godoc.org/github.com/Matt-Gleich/statuser/v2?status.svg)
 
 ### Emojis
 
-By default, emojis are turned on. If you wish to disable them then just do `emojis = false` in your go code.
+By default, emojis are turned on. If you wish to disable them then just do `Emojis = false` in your go code.
 
 ### `Error()`
 
