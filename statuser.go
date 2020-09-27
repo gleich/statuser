@@ -57,3 +57,12 @@ func Warning(message string) {
 	}
 	color.Yellow(title + "\n" + message)
 }
+
+// Output a success to the user
+func Success(message string) {
+	prefix := "✓ "
+	if Emojis {
+		prefix = "✅  "
+	}
+	color.Green(prefix + message)
+}

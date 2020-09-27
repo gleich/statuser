@@ -22,3 +22,10 @@ func TestWarning(t *testing.T) {
 	Emojis = true
 	Warning("Test")
 }
+
+func TestSuccess(t *testing.T) {
+	Emojis = true
+	Success("Test")
+	Emojis = false
+	Success("Test")
+}
