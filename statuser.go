@@ -60,7 +60,7 @@ func Warning(message string) {
 
 // Output a success to the user
 func Success(message string) {
-	prefix := "✓ "
+	prefix := "✔ "
 	if Emojis {
 		prefix = "✅ "
 	}
