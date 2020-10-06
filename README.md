@@ -18,9 +18,7 @@ go get -u github.com/Matt-Gleich/statuser/v2
 
 ## 📚 Documentation ![GoDoc](https://godoc.org/github.com/Matt-Gleich/statuser/v2?status.svg)
 
-### Emojis
-
-By default, emojis are turned on. If you wish to disable them then just do `Emojis = false` in your go code.
+Here is some basic usage:
 
 ### `Error()`
 

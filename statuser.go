@@ -5,11 +5,37 @@ import (
 	"os"
 	"unicode/utf8"
 
+	"github.com/enescakir/emoji"
 	"github.com/fatih/color"
 )
 
-// Emojis ... If the output should use emojis
-var Emojis = true
+var (
+	// If the output should use emojis
+	Emojis = true
+
+	// Error emoji
+	ErrorEmoji = emoji.PoliceCarLight
+	// Error text
+	ErrorText = " ERROR "
+	// Error box character
+	ErrorBoxChar = "░"
+	// Error character if emojis are turned off
+	ErrorChar = "✗"
+
+	// Warning emoji
+	WarningEmoji = emoji.Warning
+	// Warning text
+	WarningText = " WARNING "
+	// Warning character if emojis are turned off
+	WarningChar = "◈"
+
+	// Success emoji
+	SuccessEmoji = emoji.CheckMarkButton
+	// Warning text
+	SuccessText = " "
+	// Warning character if emojis are turned off
+	SuccessChar = "✔"
+)
 
 func generateBlock(message, surroundingChar string) string {
 	messageLen := utf8.RuneCountInString(message)
@@ -28,11 +54,11 @@ func generateBlock(message, surroundingChar string) string {
 
 // Output an error to the user
 func Error(message string, err error, exitCode int) {
-	title := "ERROR"
+	title := emoji.Sprint(ErrorChar, ErrorText, ErrorChar)
 	if Emojis {
-		title = "🚨 ERROR 🚨"
+		title = emoji.Sprint(ErrorEmoji, ErrorText, ErrorEmoji)
 	}
-	color.Red(generateBlock(title, "░"))
+	color.Red(generateBlock(title, ErrorBoxChar))
 	color.Red("\n" + message)
 	color.Red("\nGOLANG ERROR (SHOW DEVELOPER):\n" + err.Error())
 	os.Exit(exitCode)
@@ -40,29 +66,29 @@ func Error(message string, err error, exitCode int) {
 
 // Output an error to the user
 func ErrorMsg(message string, exitCode int) {
-	title := "ERROR"
+	title := emoji.Sprint(ErrorChar, ErrorText, ErrorChar)
 	if Emojis {
-		title = "🚨 ERROR 🚨"
+		title = emoji.Sprint(ErrorEmoji, ErrorText, ErrorEmoji)
 	}
-	color.Red(generateBlock(title, "░"))
+	color.Red(generateBlock(title, ErrorBoxChar))
 	color.Red("\n" + message)
 	os.Exit(exitCode)
 }
 
 // Output a warning to the user
 func Warning(message string) {
-	title := "WARNING"
+	title := emoji.Sprint(WarningChar, WarningText, WarningChar)
 	if Emojis {
-		title = "⚠️ WARNING ⚠️"
+		title = emoji.Sprint(WarningEmoji, WarningText, WarningEmoji)
 	}
 	color.Yellow(title + "\n" + message)
 }
 
 // Output a success to the user
 func Success(message string) {
-	prefix := "✔ "
+	prefix := emoji.Sprint(SuccessChar, SuccessText)
 	if Emojis {
-		prefix = "✅ "
+		prefix = emoji.Sprint(SuccessEmoji, SuccessText)
 	}
 	color.Green(prefix + message)
 }
