@@ -16,7 +16,7 @@ Simply run the command below in the root of your go project:
 go get -u github.com/Matt-Gleich/statuser/v2
 ```
 
-## 📚 Documentation ![GoDoc](https://godoc.org/github.com/Matt-Gleich/statuser/v2?status.svg)
+## 📚 Documentation [![GoDoc](https://godoc.org/github.com/Matt-Gleich/statuser/v2?status.svg)](https://pkg.go.dev/github.com/Matt-Gleich/statuser/v2)
 
 Here is some basic usage:
 
