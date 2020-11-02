@@ -1,4 +1,4 @@
-<!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich"]:end -->
+<!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich", "dependabot-preview[bot]"]:end -->
 
 # statuser ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Matt-Gleich/statuser?include_prereleases)
 
@@ -120,9 +120,11 @@ Outputs the following text in green:
 1. Matthew Gleich ([@Matt-Gleich](http://www.github.com/Matt-Gleich))
 
 <!-- DO NOT REMOVE - contributor_list:start -->
-
 ## 👥 Contributors
 
+
 - **[@Matt-Gleich](https://github.com/Matt-Gleich)**
+
+- **[@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)**
 
 <!-- DO NOT REMOVE - contributor_list:end -->
