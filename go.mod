@@ -1,4 +1,4 @@
-module github.com/Matt-Gleich/statuser/v2
+module github.com/gleich/statuser/v2
 
 go 1.14
 

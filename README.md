@@ -1,22 +1,22 @@
-<!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich", "dependabot-preview[bot]"]:end -->
+<!-- DO NOT REMOVE - contributor_list:data:start:["gleich", "dependabot-preview[bot]"]:end -->
 
-# statuser ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Matt-Gleich/statuser?include_prereleases)
+# statuser ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/gleich/statuser?include_prereleases)
 
 📣 A user-friendly status outputting library for go
 
-![build](https://github.com/Matt-Gleich/statuser/workflows/build/badge.svg)
-![lint](https://github.com/Matt-Gleich/statuser/workflows/lint/badge.svg)
-![test](https://github.com/Matt-Gleich/statuser/workflows/test/badge.svg)
+![build](https://github.com/gleich/statuser/workflows/build/badge.svg)
+![lint](https://github.com/gleich/statuser/workflows/lint/badge.svg)
+![test](https://github.com/gleich/statuser/workflows/test/badge.svg)
 
 ## 🚀 Installing
 
 Simply run the command below in the root of your go project:
 
 ```bash
-go get -u github.com/Matt-Gleich/statuser/v2
+go get -u github.com/gleich/statuser/v2
 ```
 
-## 📚 Documentation [![GoDoc](https://godoc.org/github.com/Matt-Gleich/statuser/v2?status.svg)](https://pkg.go.dev/github.com/Matt-Gleich/statuser/v2)
+## 📚 Documentation [![GoDoc](https://godoc.org/github.com/gleich/statuser/v2?status.svg)](https://pkg.go.dev/github.com/gleich/statuser/v2)
 
 Here is some basic usage:
 
@@ -117,13 +117,13 @@ Outputs the following text in green:
 
 ## Contributors
 
-1. Matthew Gleich ([@Matt-Gleich](http://www.github.com/Matt-Gleich))
+1. Matthew Gleich ([@gleich](http://www.github.com/gleich))
 
 <!-- DO NOT REMOVE - contributor_list:start -->
 ## 👥 Contributors
 
 
-- **[@Matt-Gleich](https://github.com/Matt-Gleich)**
+- **[@gleich](https://github.com/gleich)**
 
 - **[@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)**
 
