@@ -3,6 +3,7 @@ package statuser
 import (
 	"fmt"
 	"os"
+	"strings"
 	"unicode/utf8"
 
 	"github.com/enescakir/emoji"
@@ -49,7 +50,22 @@ func generateBlock(message, surroundingChar string) string {
 	for i := 0; i < messageLen+extension; i++ {
 		topAndBottom = topAndBottom + surroundingChar
 	}
-	return fmt.Sprintf("%v\n%v%v%v\n%v", topAndBottom, surroundingChar, message, surroundingChar, topAndBottom)
+	return fmt.Sprintf(
+		"%v\n%v%v%v\n%v",
+		topAndBottom,
+		surroundingChar,
+		message,
+		surroundingChar,
+		topAndBottom,
+	)
+}
+
+func separateBySpaces(items []interface{}) string {
+	stringItems := []string{}
+	for _, item := range items {
+		stringItems = append(stringItems, fmt.Sprint(item))
+	}
+	return strings.Join(stringItems, " ")
 }
 
 // Output an error to the user
@@ -76,7 +92,8 @@ func ErrorMsg(message string, exitCode int) {
 }
 
 // Output a warning to the user
-func Warning(message string) {
+func Warning(msgItems ...interface{}) {
+	message := separateBySpaces(msgItems)
 	title := emoji.Sprint(WarningChar, WarningText, WarningChar)
 	if Emojis {
 		title = emoji.Sprint(WarningEmoji, WarningText, WarningEmoji)
@@ -85,7 +102,8 @@ func Warning(message string) {
 }
 
 // Output a success to the user
-func Success(message string) {
+func Success(msgItems ...interface{}) {
+	message := separateBySpaces(msgItems)
 	prefix := emoji.Sprint(SuccessChar, SuccessText)
 	if Emojis {
 		prefix = emoji.Sprint(SuccessEmoji, SuccessText)
